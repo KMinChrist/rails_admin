@@ -205,6 +205,7 @@
           selected_type = type_select.val().toLowerCase();
           selected_data = $("#" + selected_type + "-js-options").data('options');
           object_select.data('options', selected_data);
+          object_select.val('');
           object_select.filteringSelect("destroy");
           object_select.filteringSelect(selected_data);
         });
